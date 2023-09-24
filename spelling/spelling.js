@@ -20,6 +20,7 @@ var showMeBox
 function initialize() {
     answerBox = document.getElementById('answerbox')
     showMeBox = document.getElementById('showmebox')
+    answerBox.className = 'typing-answer'
 }
 
 function getRandomInt(max) {
@@ -29,6 +30,7 @@ function getRandomInt(max) {
 function resetUI() {
     answerBox.value = ''
     showMeBox.innerHTML = ''
+    answerBox.className = 'typing-answer'
 }
 
 function nextWord() {
@@ -49,7 +51,7 @@ function checkWord() {
 }
 
 function sayAgain() {
-    answerBox.className = ''
+    answerBox.className = 'typing-answer'
     synth.speak(utterance)
     answerBox.focus()
 }

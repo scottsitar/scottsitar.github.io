@@ -1,12 +1,30 @@
+.dark {
+    background-color: #003300;
+    color: #c0c0c0;
+}
+
 .center-block {
     text-align: center;
     margin-bottom: 24px;
 }
 
 .correct-answer {
-    background-color: green;
+    background-color: #008000;
 }
 
 .incorrect-answer {
-    background-color: red;
+    background-color: #800000;
+}
+
+.typing-answer {
+    background-color: #303030;
+}
+
+#answerbox {
+    font-size: 24px;
+    color: #c0c0c0;
+}
+
+#showmebox {
+    font-size: 36px;
 }
