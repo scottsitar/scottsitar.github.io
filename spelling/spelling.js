@@ -42,14 +42,16 @@ function nextWord() {
 function checkWord() {
     let guess = answerBox.value
     if (guess == word) {
-        alert('Right!')
+        answerBox.className = 'correct-answer'
     } else {
-        alert('Wrong!')
+        answerBox.className = 'incorrect-answer'
     }
 }
 
 function sayAgain() {
+    answerBox.className = ''
     synth.speak(utterance)
+    answerBox.focus()
 }
 
 function showMe() {

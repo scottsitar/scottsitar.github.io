@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Spelling Practice</title>
+    <link rel="stylesheet" type="text/css" href="spelling.css" />
     <script type="text/javascript" src="spelling.js"></script>
     <script type="text/javascript">window.addEventListener('load', initialize)</script>
 </head>
 <body>
-<h1>Spelling Practice</h1>
-<div>
+<h1 class="center-block">Spelling Practice</h1>
+<div class="center-block">
     <button onclick="nextWord()">Next word</button>
     <button onclick="checkWord()">Check word</button>
     <button onclick="sayAgain()">Say again</button>
     <button onclick="showMe()">Show me</button>
 </div>
-<div>
-    <input id="answerbox" type="text"/>
+<div class="center-block">
+    <input id="answerbox" type="text" />
 </div>
-<div id="showmebox">
+<div class="center-block" id="showmebox">
 
 </div>
 </body>

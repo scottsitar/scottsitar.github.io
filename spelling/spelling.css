@@ -1,0 +1,12 @@
+.center-block {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.correct-answer {
+    background-color: green;
+}
+
+.incorrect-answer {
+    background-color: red;
+}
