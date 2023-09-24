@@ -1,27 +1,19 @@
-var words = [
-    'today',
-    'tomorrow',
-    'yesterday',
-    'complicated',
-    'stairs',
-    'computer',
-    'mountain',
-]
+import { words } from './words.js'
 
-var word = words[0]
-var synth = window.speechSynthesis
-var utterance = new SpeechSynthesisUtterance(word)
+let word = words[0]
+let synth = window.speechSynthesis
+let utterance = new SpeechSynthesisUtterance(word)
 utterance.rate = 0.8
 utterance.lang = "en"
 
-var answerBox
-var showMeBox
+let answerBox = document.getElementById('answerbox')
+let showMeBox = document.getElementById('showmebox')
+answerBox.className = 'typing-answer'
 
-function initialize() {
-    answerBox = document.getElementById('answerbox')
-    showMeBox = document.getElementById('showmebox')
-    answerBox.className = 'typing-answer'
-}
+document.getElementById('next-word-btn').addEventListener('click', nextWord)
+document.getElementById('check-word-btn').addEventListener('click', checkWord)
+document.getElementById('say-again-btn').addEventListener('click', sayAgain)
+document.getElementById('show-me-btn').addEventListener('click', showMe)
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);

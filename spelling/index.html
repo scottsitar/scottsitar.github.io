@@ -4,16 +4,15 @@
     <meta charset="utf-8" />
     <title>Spelling Practice</title>
     <link rel="stylesheet" type="text/css" href="spelling.css" />
-    <script type="text/javascript" src="spelling.js"></script>
-    <script type="text/javascript">window.addEventListener('load', initialize)</script>
+    <script type="module" src="spelling.js"></script>
 </head>
 <body class="dark">
 <h1 class="center-block">Spelling Practice</h1>
 <div class="center-block">
-    <button onclick="nextWord()">Next word</button>
-    <button onclick="checkWord()">Check word</button>
-    <button onclick="sayAgain()">Say again</button>
-    <button onclick="showMe()">Show me</button>
+    <button id="next-word-btn">Next word</button>
+    <button id="check-word-btn">Check word</button>
+    <button id="say-again-btn">Say again</button>
+    <button id="show-me-btn">Show me</button>
 </div>
 <div class="center-block">
     <input id="answerbox" type="text" />
