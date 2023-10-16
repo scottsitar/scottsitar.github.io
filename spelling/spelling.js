@@ -15,8 +15,27 @@ document.getElementById('check-word-btn').addEventListener('click', checkWord)
 document.getElementById('say-again-btn').addEventListener('click', sayAgain)
 document.getElementById('show-me-btn').addEventListener('click', showMe)
 
+let voiceSelect = document.getElementById('voice-select')
+voiceSelect.replaceChildren()
+
+let voices = synth.getVoices().filter(v => v.lang.startsWith('en-'))
+let voiceMap = {}
+voices.forEach(v => {
+    let option = document.createElement('option')
+    option.value = v.name
+    option.innerHTML = v.name
+    voiceMap[v.name] = v
+
+    voiceSelect.appendChild(option)
+})
+utterance.voice = voices[0]
+
+voiceSelect.onchange = function(e) {
+    utterance.voice = voiceMap[e.target.value]
+}
+
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * max)
 }
 
 function resetUI() {
