@@ -28,3 +28,9 @@
 #showmebox {
     font-size: 36px;
 }
+
+.char-button {
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

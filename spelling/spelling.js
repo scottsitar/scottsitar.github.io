@@ -1,5 +1,15 @@
 import { words } from './words.js'
 
+let specialLettersDiv = document.getElementById('special-letters-div')
+Array("à", "é", "è", "ê", "ë", "ï", "ö", "ù", "ç").forEach(c => {
+    let btn = document.createElement('button')
+    btn.className = 'char-button'
+    btn.onclick = handleSpecialCharacterClick
+    btn.innerHTML = c
+
+    specialLettersDiv.appendChild(btn)
+})
+
 let word = words[0]
 let synth = window.speechSynthesis
 let utterance = new SpeechSynthesisUtterance(word)
@@ -32,6 +42,20 @@ utterance.voice = voices[0]
 
 voiceSelect.onchange = function(e) {
     utterance.voice = voiceMap[e.target.value]
+}
+
+function handleSpecialCharacterClick(e) {
+    let btn = e.target
+    let c = btn.innerHTML
+    let text = answerBox.value
+    let pos = answerBox.selectionStart
+    let before = text.slice(0, pos)
+    let after = text.slice(pos)
+
+    answerBox.value = before + c + after
+    answerBox.selectionStart = pos + 1
+    answerBox.selectionEnd = pos + 1
+    answerBox.focus()
 }
 
 function getRandomInt(max) {
