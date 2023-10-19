@@ -1,7 +1,7 @@
 import { words } from './words.js'
 
 let specialLettersDiv = document.getElementById('special-letters-div')
-Array("à", "é", "è", "ê", "ë", "ï", "ö", "ù", "ç").forEach(c => {
+Array("à", "â", "é", "è", "ê", "ë", "î", "ï", "ô", "ö", "ù", "ç", "œ").forEach(c => {
     let btn = document.createElement('button')
     btn.className = 'char-button'
     btn.onclick = handleSpecialCharacterClick
