@@ -34,3 +34,8 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+select {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
