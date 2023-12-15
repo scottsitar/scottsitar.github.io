@@ -33,7 +33,7 @@ initializeUI()
 function initializeUI() {
     // create the buttons for entering special characters
     let specialLettersDiv = document.getElementById('special-letters-div')
-    Array("à", "â", "é", "è", "ê", "ë", "î", "ï", "ô", "ö", "ù", "ç", "œ").forEach(c => {
+    Array("à", "â", "é", "è", "ê", "ë", "î", "ï", "ô", "ö", "ù", "û", "ç", "œ").forEach(c => {
         let btn = document.createElement('button')
         btn.className = 'char-button'
         btn.onclick = handleSpecialCharacterClick
