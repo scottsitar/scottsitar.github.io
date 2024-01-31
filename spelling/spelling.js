@@ -1,16 +1,24 @@
-import { words as enWords } from './en-words.js'
-import { words as frWords } from './fr-words.js'
+import { words as enWordsEverything } from './words/en/everything.js'
+
+import { words as frWordsEverything } from './words/fr/everything.js'
+import { words as frWordsDictee20240129 } from './words/fr/dictee-2024-01-29.js'
 
 // get references to all dom elements we need
 let langSelect = document.getElementById('lang-select')
+let listSelect = document.getElementById('list-select')
 let voiceSelect = document.getElementById('voice-select')
 let answerBox = document.getElementById('answerbox')
 let showMeBox = document.getElementById('showmebox')
 
 // module global variables
 let wordsMap = {
-    'en': enWords,
-    'fr': frWords
+    'en': {
+        'Everything': enWordsEverything,
+    },
+    'fr': {
+        'Everything': frWordsEverything,
+        'Dictee 2024/01/29': frWordsDictee20240129,
+    }
 }
 let words = []
 
@@ -57,12 +65,20 @@ function initializeUI() {
     // choose words based on language
     updateWords('en')
 
-    // event handlers for language and voice changes
+    // event handlers for language, word list, and voice changes
     langSelect.onchange = function(e) {
         let lang = e.target.value
         updateVoiceSelect(lang)
         updateWords(lang)
         utterance.lang = lang
+    }
+
+    // TODO: a little messy
+    listSelect.onchange = function(e) {
+        let lang = langSelect.value
+        let wordList = wordsMap[lang][e.target.value]
+        words = wordList
+        utterance.text = words[0]
     }
 
     voiceSelect.onchange = function(e) {
@@ -97,7 +113,15 @@ function updateVoiceSelect(lang) {
 }
 
 function updateWords(lang) {
-    words = wordsMap[lang]
+    listSelect.replaceChildren()
+    for (let wordList in wordsMap[lang]) {
+        let option = document.createElement('option')
+        option.value = wordList
+        option.innerHTML = wordList
+        listSelect.appendChild(option)
+    }
+
+    words = wordsMap[lang]['Everything']
     utterance.text = words[0]
 }
 
