@@ -9,4 +9,11 @@ export const words = [
     'déballer',
     'vieux',
     'l\'onneur',
+    'manger',
+    'je mange',
+    'tu manges',
+    'il mange',
+    'nous mangeons',
+    'vous mangez',
+    'ils mangent',
 ]
