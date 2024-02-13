@@ -9,4 +9,10 @@ export const words = [
     'la générosité',
     'la politesse',
     'un compliment',
+    'j\'ai été',
+    'tu as été',
+    'il a été',
+    'nous avons été',
+    'vous avez été',
+    'ils ont été',
 ]
