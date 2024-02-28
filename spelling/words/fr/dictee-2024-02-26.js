@@ -1,0 +1,20 @@
+export const words = [
+    'beau',
+    'chaud',
+    'les mots',
+    'un chapeau',
+    'un corbeau',
+    'la peau',
+    'un cadeau',
+    'un gâteau',
+    'en haut',
+    'aussi',
+    'je suis allé',
+    'tu es allé',
+    'il est allé',
+    'elle est allée',
+    'vous êtes allés',
+    'nous sommes allés',
+    'ils sont allés',
+    'elles sont allées'
+]
