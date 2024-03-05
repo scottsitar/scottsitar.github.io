@@ -5,6 +5,7 @@ import { words as frWordsDictee20240129 } from './words/fr/dictee-2024-01-29.js'
 import { words as frWordsDictee20240205 } from './words/fr/dictee-2024-02-05.js'
 import { words as frWordsDictee20240212 } from './words/fr/dictee-2024-02-12.js'
 import { words as frWordsDictee20240226 } from './words/fr/dictee-2024-02-26.js'
+import { words as frWordsDictee20240304 } from './words/fr/dictee-2024-03-04.js'
 
 // get references to all dom elements we need
 let langSelect = document.getElementById('lang-select')
@@ -20,6 +21,7 @@ let wordsMap = {
     },
     'fr': {
         'Everything': frWordsEverything,
+        'Dictee 2024/03/04': frWordsDictee20240304,
         'Dictee 2024/02/26': frWordsDictee20240226,
         'Dictee 2024/02/12': frWordsDictee20240212,
         'Dictee 2024/02/05': frWordsDictee20240205,
