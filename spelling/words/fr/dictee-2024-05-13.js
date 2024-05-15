@@ -1,0 +1,18 @@
+export const words = [
+    'un métier',
+    'un travail',
+    'un emplois',
+    'un agriculteur',
+    'une agricultrice',
+    'un pêcheur',
+    'une pêcheuse',
+    'un éleveur',
+    'une éleveuse',
+    'un coiffeur',
+    'une coiffeuse',
+    'un policier',
+    'une policière',
+    'un pompier',
+    'une pompière',
+    'cultiver',
+]
