@@ -52,6 +52,8 @@ let utterance = new SpeechSynthesisUtterance('')
 utterance.rate = 0.8
 utterance.lang = 'en'
 
+let currentWordIndex = 0
+
 // initialization
 initializeUI()
 
@@ -96,7 +98,8 @@ function initializeUI() {
         let lang = langSelect.value
         let wordList = wordsMap[lang][e.target.value]
         words = wordList
-        utterance.text = words[0]
+        currentWordIndex = 0
+        utterance.text = words[currentWordIndex]
     }
 
     voiceSelect.onchange = function(e) {
@@ -140,7 +143,8 @@ function updateWords(lang) {
     }
 
     words = wordsMap[lang]['Everything']
-    utterance.text = words[0]
+    currentWordIndex = 0
+    utterance.text = words[currentWordIndex]
 }
 
 function handleSpecialCharacterClick(e) {
@@ -164,8 +168,8 @@ function resetTextBoxes() {
 }
 
 function nextWord() {
-    let i = Math.floor(Math.random() * words.length)
-    utterance.text = words[i]
+    currentWordIndex = (currentWordIndex + 1) % words.length
+    utterance.text = words[currentWordIndex]
     resetTextBoxes()
     sayAgain()
 }
