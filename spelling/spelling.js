@@ -1,16 +1,10 @@
 import { words as enWordsEverything } from './words/en/everything.js'
 
-import { words as frWordsEverything } from './words/fr/everything.js'
-import { words as frWordsDictee20240129 } from './words/fr/dictee-2024-01-29.js'
-import { words as frWordsDictee20240205 } from './words/fr/dictee-2024-02-05.js'
-import { words as frWordsDictee20240212 } from './words/fr/dictee-2024-02-12.js'
-import { words as frWordsDictee20240226 } from './words/fr/dictee-2024-02-26.js'
-import { words as frWordsDictee20240304 } from './words/fr/dictee-2024-03-04.js'
-import { words as frWordsDictee20240408 } from './words/fr/dictee-2024-04-08.js'
-import { words as frWordsDictee20240415 } from './words/fr/dictee-2024-04-15.js'
-import { words as frWordsDictee20240422 } from './words/fr/dictee-2024-04-22.js'
-import { words as frWordsDictee20240506 } from './words/fr/dictee-2024-05-06.js'
-import { words as frWordsDictee20240513 } from './words/fr/dictee-2024-05-13.js'
+import { words as frWordsDictee20240527 } from './words/fr/dictee-2024-05-27.js'
+import { words as verbsVenir } from './words/fr/verbs-venir.js'
+import { words as verbsPrendre } from './words/fr/verbs-prendre.js'
+import { words as verbsDevoir } from './words/fr/verbs-devoir.js'
+import { words as verbsMettre } from './words/fr/verbs-mettre.js'
 
 // get references to all dom elements we need
 let langSelect = document.getElementById('lang-select')
@@ -25,17 +19,11 @@ let wordsMap = {
         'Everything': enWordsEverything,
     },
     'fr': {
-        'Everything': frWordsEverything,
-        'Dictee 2024/05/13': frWordsDictee20240513,
-        'Dictee 2024/05/06': frWordsDictee20240506,
-        'Dictee 2024/04/22': frWordsDictee20240422,
-        'Dictee 2024/04/15': frWordsDictee20240415,
-        'Dictee 2024/04/08': frWordsDictee20240408,
-        'Dictee 2024/03/04': frWordsDictee20240304,
-        'Dictee 2024/02/26': frWordsDictee20240226,
-        'Dictee 2024/02/12': frWordsDictee20240212,
-        'Dictee 2024/02/05': frWordsDictee20240205,
-        'Dictee 2024/01/29': frWordsDictee20240129,
+        'Dictee 2024/05/27': frWordsDictee20240527,
+        'Venir': verbsVenir,
+        'Prendre': verbsPrendre,
+        'Devoir': verbsDevoir,
+        'Mettre': verbsMettre,
     }
 }
 let words = []
