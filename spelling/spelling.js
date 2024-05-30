@@ -1,10 +1,15 @@
 import { words as enWordsEverything } from './words/en/everything.js'
 
 import { words as frWordsDictee20240527 } from './words/fr/dictee-2024-05-27.js'
-import { words as verbsVenir } from './words/fr/verbs-venir.js'
-import { words as verbsPrendre } from './words/fr/verbs-prendre.js'
+import { words as verbsAller } from './words/fr/verbs-aller.js'
+import { words as verbsAvoir } from './words/fr/verbs-avoir.js'
 import { words as verbsDevoir } from './words/fr/verbs-devoir.js'
+import { words as verbsEtre } from './words/fr/verbs-etre.js'
+import { words as verbsFaire } from './words/fr/verbs-faire.js'
 import { words as verbsMettre } from './words/fr/verbs-mettre.js'
+import { words as verbsPrendre } from './words/fr/verbs-prendre.js'
+import { words as verbsVenir } from './words/fr/verbs-venir.js'
+import { words as verbsVouloir } from './words/fr/verbs-vouloir.js'
 
 // get references to all dom elements we need
 let langSelect = document.getElementById('lang-select')
@@ -20,10 +25,15 @@ let wordsMap = {
     },
     'fr': {
         'Dictee 2024/05/27': frWordsDictee20240527,
-        'Venir': verbsVenir,
-        'Prendre': verbsPrendre,
+        'Aller': verbsAller,
+        'Avoir': verbsAvoir,
         'Devoir': verbsDevoir,
+        'Etre': verbsEtre,
+        'Faire': verbsFaire,
         'Mettre': verbsMettre,
+        'Prendre': verbsPrendre,
+        'Venir': verbsVenir,
+        'Vouloir': verbsVouloir,
     }
 }
 let words = []
