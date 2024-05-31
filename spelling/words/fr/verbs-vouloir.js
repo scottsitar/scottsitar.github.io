@@ -7,5 +7,5 @@ export const words = [
     'nous voulons',
     'vous voulez',
     'ils veulent',
-    'elle veulent',
+    'elles veulent',
 ]
