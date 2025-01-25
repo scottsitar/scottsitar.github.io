@@ -1,8 +1,11 @@
 import { words as enWordsEverything } from './words/en/everything.js'
 
-import { words as frWordsDictee20240617 } from './words/fr/dictee-2024-06-17.js'
-import { words as verbsSeCacher } from './words/fr/verbs-se-cacher.js'
-import { words as verbsSeReveiller } from './words/fr/verbs-se-reveiller.js'
+import { words as frVerbsEtreImparfait } from './words/fr/verbs-etre-imparfait.js'
+import { words as frVerbsAvoirImparfait } from './words/fr/verbs-avoir-imparfait.js'
+import { words as frVerbsParlerImparfait } from './words/fr/verbs-parler-imparfait.js'
+import { words as frVerbsMangerImparfait } from './words/fr/verbs-manger-imparfait.js'
+import { words as frVerbsDormirImparfait } from './words/fr/verbs-dormir-imparfait.js'
+
 
 // get references to all dom elements we need
 let langSelect = document.getElementById('lang-select')
@@ -17,9 +20,11 @@ let wordsMap = {
         'Everything': enWordsEverything,
     },
     'fr': {
-        'Dictee 2024/06/17': frWordsDictee20240617,
-        'Se Cacher': verbsSeCacher,
-        'Se Réveiller': verbsSeReveiller,
+        'être (imparfait)': frVerbsEtreImparfait,
+        'avoir (imparfait)': frVerbsAvoirImparfait,
+        'parler (imparfait)': frVerbsParlerImparfait,
+        'manger (imparfait)': frVerbsMangerImparfait,
+        'dormir (imparfait)': frVerbsDormirImparfait,
     }
 }
 let words = []
