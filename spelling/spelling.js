@@ -5,6 +5,9 @@ import { words as frVerbsAvoirImparfait } from './words/fr/verbs-avoir-imparfait
 import { words as frVerbsParlerImparfait } from './words/fr/verbs-parler-imparfait.js'
 import { words as frVerbsMangerImparfait } from './words/fr/verbs-manger-imparfait.js'
 import { words as frVerbsDormirImparfait } from './words/fr/verbs-dormir-imparfait.js'
+import { words as frVerbsChoisirImparfait } from './words/fr/verbs-choisir-imparfait.js'
+import { words as frVerbsVouloirImparfait } from './words/fr/verbs-vouloir-imparfait.js'
+import { words as frVerbsPrendreImparfait } from './words/fr/verbs-prendre-imparfait.js'
 
 
 // get references to all dom elements we need
@@ -25,6 +28,9 @@ let wordsMap = {
         'parler (imparfait)': frVerbsParlerImparfait,
         'manger (imparfait)': frVerbsMangerImparfait,
         'dormir (imparfait)': frVerbsDormirImparfait,
+        'choisir (imparfait)': frVerbsChoisirImparfait,
+        'vouloir (imparfait)': frVerbsVouloirImparfait,
+        'prendre (imparfait)': frVerbsPrendreImparfait,
     }
 }
 let words = []
