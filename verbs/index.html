@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Verb Conjugation Practice</title>
+    <link rel="stylesheet" type="text/css" href="verbs.css"/>
+    <script type="module" src="verbs.js"></script>
+</head>
+<body class="dark">
+<h1 class="center-block">Verb Conjugation Practice</h1>
+<div id="main-area">
+    <div class="row-spacer"></div>
+    <div id="letter-index"></div>
+    <div id="letter-words"></div>
+    <div class="center-block">
+        <div class="bottom-space">
+            <select id="tense-select">
+                <option value="present">Présent</option>
+                <option value="past">Passé Composé</option>
+                <option value="imperfect">Imparfait</option>
+            </select>
+        </div>
+        <div class="bottom-space">
+            <button id="button-check" type="button">Check</button>
+            <button id="button-show-me" type="button">Show Me</button>
+            <button id="button-next" type="button">Next</button>
+        </div>
+        <div id="test-name" class="bottom-space"></div>
+        <div id="show-me" class="bottom-space"></div>
+        <div class="bottom-space">
+            <span id="pronoun"></span>
+            <input id="input-answer" class="answer-typing" type="text"/>
+        </div>
+        <div id="special-letters"></div>
+    </div>
+    <div class="row-spacer"></div>
+</div>
+</body>
+</html>

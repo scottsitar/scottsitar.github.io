@@ -1,0 +1,93 @@
+body {
+    font-size: 24px;
+}
+
+.dark {
+    background-color: #003300;
+    color: #c0c0c0;
+}
+
+.center-block {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.bottom-space {
+    margin-bottom: 24px;
+}
+
+.row-spacer {
+    flex-grow: 1;
+}
+
+.char-button {
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main-area {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+#letter-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.index-tab {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.index-tab:hover {
+    color: yellow;
+}
+
+.index-tab-empty {
+    padding: 8px;
+    color: #003300;
+}
+
+#letter-words {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    padding-top: 8px;
+    min-width: 200px;
+}
+
+.word-list-item {
+    cursor: pointer;
+}
+
+.word-list-item:hover {
+    color: yellow;
+}
+
+.answer-typing {
+    background-color: #303030;
+}
+
+.answer-correct {
+    background-color: #008000;
+}
+
+.answer-incorrect {
+    background-color: #800000;
+}
+
+#show-me {
+    font-size: 36px;
+}
+
+#pronoun {
+    margin-right: 8px;
+}
+
+#input-answer {
+    font-size: 24px;
+    color: #c0c0c0;
+}
