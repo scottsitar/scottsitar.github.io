@@ -6,6 +6,11 @@ export const verbData = [{
         "past": ["je suis allé", "tu es allé", "il est allé", "elle est allée", "nous sommes allés", "vous êtes allés", "ils sont allés", "elles sont allées"],
         "imperfect": ["j'allais", "tu allais", "il allait", "elle allait", "nous allions", "vous alliez", "ils allaient", "elles allaient"],
     }, {
+        "name": "s'amuser",
+        "present": ["je m'amuse", "tu t'amuses", "il s'amuse", "elle s'amuse", "nous nous amusons", "vous vous amusez", "ils s'amusent", "elles s'amusent"],
+        "past": ["je me suis amusé", "tu t'es amusé", "il s'est amusé", "elle s'est amusée", "nous nous sommes amusés", "vous vous êtes amusés", "ils se sont amusés", "elles se sont amusées"],
+        "imperfect": ["je m'amusais", "tu t'amusais", "il s'amusait", "elle s'amusait", "nous nous amusions", "vous vous amusiez", "ils s'amusaient", "elles s'amusaient"],
+    }, {
         "name": "apprendre",
         "present": ["j'apprends", "tu apprends", "il apprend", "elle apprend", "nous apprenons", "vous apprenez", "ils apprennent", "elles apprennent"],
         "past": ["j'ai appris", "tu as appris", "il a appris", "elle a appris", "nous avons appris", "vous avez appris", "ils ont appris", "elles ont appris"],
@@ -156,6 +161,11 @@ export const verbData = [{
         "present": ["je reçois", "tu reçois", "il reçoit", "elle reçoit", "nous recevons", "vous recevez", "ils reçoivent", "elles reçoivent"],
         "past": ["j'ai reçu", "tu as reçu", "il a reçu", "elle a reçu", "nous avons reçu", "vous avez reçu", "ils ont reçu", "elles ont reçu"],
         "imperfect": ["je recevais", "tu recevais", "il recevait", "elle recevait", "nous recevions", "vous receviez", "ils recevaient", "elles recevaient"],
+    }, {
+        "name": "régler",
+        "present": ["je règle", "tu règles", "il règle", "elle règle", "nous réglons", "vous réglez", "ils règlent", "elles règlent"],
+        "past": ["j'ai réglé", "tu as réglé", "il a réglé", "elle a réglé", "nous avons réglé", "vous avez réglé", "ils ont réglé", "elles ont réglé"],
+        "imperfect": ["je réglais", "tu réglais", "il réglait", "elle réglait", "nous réglions", "vous régliez", "ils réglaient", "elles réglaient"],
     }, {
         "name": "rendre",
         "present": ["je rends", "tu rends", "il rend", "elle rend", "nous rendons", "vous rendez", "ils rendent", "elles rendent"],
