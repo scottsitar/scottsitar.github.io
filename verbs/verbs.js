@@ -19,6 +19,13 @@ checkButton.addEventListener('click', handleCheck)
 showMeButton.addEventListener('click', handleShowMe)
 nextButton.addEventListener('click', handleNext)
 
+answerInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        e.preventDefault()
+        handleCheck()
+    }
+})
+
 let currentIndexLetter
 let currentWord
 let currentTest
@@ -109,6 +116,7 @@ function computeAnswer() {
 function handleCheck() {
     if (answerInput.value === currentAnswer) {
         answerInput.className = 'answer-correct'
+        setTimeout(handleNext, 1000)
     } else {
         answerInput.className = 'answer-incorrect'
     }

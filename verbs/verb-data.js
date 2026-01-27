@@ -2,7 +2,7 @@ export const verbData = [{
     "key": "A",
     "words": [{
         "name": "aller",
-        "present": ["je vais", "tu vas", "il va", "elle va", "nous allons", "vous avez", "ils vont", "elles vont"],
+        "present": ["je vais", "tu vas", "il va", "elle va", "nous allons", "vous allez", "ils vont", "elles vont"],
         "past": ["je suis allé", "tu es allé", "il est allé", "elle est allée", "nous sommes allés", "vous êtes allés", "ils sont allés", "elles sont allées"],
         "imperfect": ["j'allais", "tu allais", "il allait", "elle allait", "nous allions", "vous alliez", "ils allaient", "elles allaient"],
     }, {
