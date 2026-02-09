@@ -141,6 +141,11 @@ export const verbData = [{
         "past": ["je suis parti", "tu es parti", "il est parti", "elle est partie", "nous sommes partis", "vous êtes partis", "ils sont partis", "elles sont parties"],
         "imperfect": ["je partais", "tu partais", "il partait", "elle partait", "nous partions", "vous partiez", "ils partaient", "elles partaient"],
     }, {
+        "name": "se plaindre",
+        "present": ["je me plains", "tu te plains", "il se plaint", "elle se plaint", "nous nous plaignons", "vous vous plaignez", "ils se plaignent", "elles se plaignent"],
+        "past": ["je me suis plaint", "tu t'es plaint", "il s'est plaint", "elle s'est plainte", "nous nous sommes plaints", "vous vous êtes plaints", "ils se sont plaints", "elles se sont plaintes"],
+        "imperfect": ["je me plaignais", "tu te plaignais", "il se plaignait", "elle se plaignait", "nous nous plaignions", "vous vous plaigniez", "ils se plaignaient", "elles se plaignaient"],
+    }, {
         "name": "pouvoir",
         "present": ["je peux", "tu peux", "il peut", "elle peut", "nous pouvons", "vous pouvez", "ils peuvent", "elles peuvent"],
         "past": ["j'ai pu", "tu as pu", "il a pu", "elle a pu", "nous avons pu", "vous avez pu", "ils ont pu", "elles ont pu"],
@@ -150,6 +155,11 @@ export const verbData = [{
         "present": ["je prends", "tu prends", "il prend", "elle prend", "nous prenons", "vous prenez", "ils prennent", "elles prennent"],
         "past": ["j'ai pris", "tu as pris", "il a pris", "elle a pris", "nous avons pris", "vous avez pris", "ils ont pris", "elles ont pris"],
         "imperfect": ["je prenais", "tu prenais", "il prenait", "elle prenait", "nous prenions", "vous preniez", "ils prenaient", "elles prenaient"],
+    }, {
+        "name": "profiter",
+        "present": ["je profite", "tu profites", "il profite", "elle profite", "nous profitons", "vous profitez", "ils profitent", "elles profitent"],
+        "past": ["j'ai profité", "tu as profité", "il a profité", "elle a profité", "nous avons profité", "vous avez profité", "ils ont profité", "elles ont profité"],
+        "imperfect": ["je profitais", "tu profitais", "il profitait", "elle profitait", "nous profitions", "vous profitiez", "ils profitaient", "elles profitaient"],
     }],
 }, {
     "key": "Q",
