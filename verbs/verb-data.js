@@ -16,6 +16,11 @@ export const verbData = [{
         "past": ["j'ai appris", "tu as appris", "il a appris", "elle a appris", "nous avons appris", "vous avez appris", "ils ont appris", "elles ont appris"],
         "imperfect": ["j'apprenais", "tu apprenais", "il apprenait", "elle apprenait", "nous apprenions", "vous appreniez", "ils apprenaient", "elles apprenaient"],
     }, {
+        "name": "associer",
+        "present": ["j'associe", "tu associes", "il associe", "elle associe", "nous associons", "vous associez", "ils associent", "elles associent"],
+        "past": ["j'ai associé", "tu as associé", "il a associé", "elle a associé", "nous avons associé", "vous avez associé", "ils ont associé", "elles ont associé"],
+        "imperfect": ["j'associais", "tu associais", "il associait", "elle associait", "nous associions", "vous associiez", "ils associaient", "elles associaient"],
+    }, {
         "name": "avoir",
         "present": ["j'ai", "tu as", "il a", "elle a", "nous avons", "vous avez", "ils ont", "elles ont"],
         "past": ["j'ai eu", "tu as eu", "il a eu", "elle a eu", "nous avons eu", "vous avez eu", "ils ont eu", "elles ont eu"],
@@ -90,6 +95,11 @@ export const verbData = [{
         "present": ["je finis", "tu finis", "il finit", "elle finit", "nous finissons", "vous finissez", "ils finissent", "elles finissent"],
         "past": ["j'ai fini", "tu as fini", "il a fini", "elle a fini", "nous avons fini", "vous avez fini", "ils ont fini", "elles ont fini"],
         "imperfect": ["je finissais", "tu finissais", "il finissait", "elle finissait", "nous finissions", "vous finissiez", "ils finissaient", "elles finissaient"],
+    }, {
+        "name": "fondre",
+        "present": ["je fonds", "tu fonds", "il fond", "elle fond", "nous fondons", "vous fondez", "ils fondent", "elles fondent"],
+        "past": ["j'ai fondu", "tu as fondu", "il a fondu", "elle a fondu", "nous avons fondu", "vous avez fondu", "ils ont fondu", "elles ont fondu"],
+        "imperfect": ["je fondais", "tu fondais", "il fondait", "elle fondait", "nous fondions", "vous fondiez", "ils fondaient", "elles fondaient"],
     }],
 }, {
     "key": "G",
